@@ -2,7 +2,7 @@ using Blog.Entities;
 
 namespace Blog.Repositories
 {
-    public interface ArticleRepository
+    public interface IArticleRepository
     {
         public IEnumerable<Article> GetArticles();
         public Article GetArticleById(Guid id);

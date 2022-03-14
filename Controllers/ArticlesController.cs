@@ -8,11 +8,11 @@ namespace Blog.Controllers
     [Route("api/articles")]
     public class ArticlesController : ControllerBase
     {
-        private readonly ArticleRepository repository;
+        private readonly IArticleRepository repository;
 
-        public ArticlesController()
+        public ArticlesController(IArticleRepository repository)
         {
-            repository = new TestArticleRepository();
+            this.repository = repository;
         }
 
         [HttpGet]

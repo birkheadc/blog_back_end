@@ -2,7 +2,7 @@ using Blog.Entities;
 
 namespace Blog.Repositories
 {
-    public class TestArticleRepository : ArticleRepository
+    public class TestArticleRepository : IArticleRepository
     {
         private readonly List<Article> articles = new()
         {
